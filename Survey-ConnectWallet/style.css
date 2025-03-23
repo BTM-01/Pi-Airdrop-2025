@@ -172,6 +172,7 @@ label {
     box-sizing: border-box;
     word-wrap: break-word;
     padding: 8px 18px;
+    color: #adadad;
 }
 
 .containConnect textarea::placeholder {
