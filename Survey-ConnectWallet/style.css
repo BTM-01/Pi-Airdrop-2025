@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html,body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    background-color: #f2f2f2;
+    color: #1a1a1a;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #e6e6e6;
+    height: 40px;
+    background-color: #693f8d;
+}
+
+.mainContainer {
+    padding: 0 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label:before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #1a1a1a;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label:before {
+    background-color: #d9bbf3;
+    border-color: #693f8d;
+}
+
+.takesuvery-info {
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.QuestionsNanswer li {
+    margin: 40px 0 0 15px;
+}
+
+.QuestionsNanswer p {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+label {
+    margin-right: 10px;
+    align-items: center;
+}
+
+.QuestionsNanswer {
+    display: flex;
+}
+
+.vrLine {
+    width: 2px;
+    background-color: #693f8d;
+    margin-right: 10px;
+}
+
+.ConnectWallet-BTN-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#ConnectWalletBTN {
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: none;
+    background-color: #693f8d;
+    color: #e6e6e6;
+    cursor: pointer;
+}
+
+#ConnectWalletBTN:active {
+    scale: 105%;
+}
+
+#ConnectWindowid {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 80%);
+    background-color: #f2f2f2;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    bottom: 0;
+    box-shadow: 0 -2px 5px #1a1a1a21;
+    max-width: 1400px;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+#ConnectWindowid.Open {
+    visibility: visible;
+    transform: translate(-50%, 0);
+}
+
+.Warn1 {
+    color: hsl(0, 100%, 50%);
+    font-size: 12px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.Warn2 {
+    color: hsl(0, 100%, 70%);
+    text-align: center;
+}
+
+.containConnect {
+    margin: 2em auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    overflow: auto;
+}
+
+.containConnect select {
+    max-width: fit-content;
+    border: 1px solid hsl(272, 38%, 60%);
+    outline: none;
+    background-color: transparent;
+    padding: 6px;
+    border-radius: 8px;
+    margin: 15px 0;
+    color: hsl(272, 38%, 30%);
+    font-weight: bold;
+}
+
+.containConnect select:active {
+    background-color: #3b3b3b38;
+}
+
+.containConnect textarea[type="text"] {
+    min-height: 180px;
+    width: 90%;
+    word-wrap: break-word;
+    white-space: nowrap;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 60%);
+    background-color: transparent;
+    font-family: cursive, 'Franklin Gothic Medium', sans-serif;
+    outline: none;
+    text-wrap: wrap;
+    padding: 8px 18px;
+}
+
+.containConnect textarea[type="text"]::placeholder {
+    padding: 8px 18px;
+    color: #adadad;
+}
+
+.containConnect button {
+    margin: 15px auto;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: #693f8d;
+    color: #e6e6e6;
+    border-radius: 8px;
+}
+
+.containConnect button:active {
+    scale: 95%;
+    background-color: #ae7ed8;
+}
+
+.closebntContainer {
+    display: flex;
+}
+
+#CancelBTNid {
+    margin: 20px 40px 0 auto;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 50%;
+}
+
+#CancelBTNid:active {
+    background-color: #858585;
+    scale: 105%;
+}

