@@ -162,21 +162,23 @@ label {
 .containConnect textarea[type="text"] {
     min-height: 180px;
     width: 90%;
+    max-width: 800px;
     word-wrap: break-word;
     white-space: nowrap;
     margin: 0 auto;
     border-radius: 5px;
     border: 1px solid hsl(0, 0%, 60%);
     background-color: transparent;
-    font-family: cursive, 'Franklin Gothic Medium', sans-serif;
+    font-family: Courier, monospace;
+    font-size: 12px;
     outline: none;
     text-wrap: wrap;
     padding: 8px 18px;
 }
 
 .containConnect textarea[type="text"]::placeholder {
-    padding: 8px 18px;
     color: #adadad;
+    text-wrap: wrap;
 }
 
 .containConnect button {
